@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="main_cal" name="myform">
+        <div class="long_text">
+            <input type="text" name="textbox" class="text_box shadow" >
+        </div>  
+
+        <div class="all_button">
+            <input type="button" value="1" class="shadow_outer" onclick="myform.textbox.value += '1' ">
+            <input type="button" value="2" class="shadow_outer" onclick="myform.textbox.value += '2' ">
+            <input type="button" value="3" class="shadow_outer" onclick="myform.textbox.value += '3' ">
+            <input type="button" value="+" class="shadow_outer" onclick="myform.textbox.value += '+' ">
+        </div>
+    <div class="all_button">
+        <input type="button" value="4" class="shadow_outer" onclick="myform.textbox.value += '4' ">
+        <input type="button" value="5" class="shadow_outer" onclick="myform.textbox.value += '5' ">
+        <input type="button" value="6" class="shadow_outer" onclick="myform.textbox.value += '6' ">
+        <input type="button" value="-" class="shadow_outer" onclick="myform.textbox.value += '-' ">
+   </div>
+
+   <div class="all_button">
+    <input type="button" value="7" class="shadow_outer" onclick="myform.textbox.value += '7' ">
+    <input type="button" value="8" class="shadow_outer" onclick="myform.textbox.value += '8' ">
+    <input type="button" value="9" class="shadow_outer" onclick="myform.textbox.value += '9' ">
+    <input type="button" value="*" class="shadow_outer" onclick="myform.textbox.value += '*' ">
+  </div>
+  <div class="all_button">
+    <input type="button" value="c" class="shadow_outer" style="background: red;" onclick="myform.textbox.value = '' ">
+    <input type="button" value="/" class="shadow_outer" onclick="myform.textbox.value += '/' ">
+    <input type="button" value="0" class="shadow_outer" onclick="myform.textbox.value += '0' ">
+    <input type="button" value="=" id="equal" class="shadow_outer" onclick="myform.textbox.value = eval(myform.textbox.value) ">
+  </div>
+  <div class="all_button">
+    <input type="button" value="("  class="end_button" class="shadow_outer" onclick="myform.textbox.value += '(' ">
+    <input type="button" value=")" class="end_button" class="shadow_outer" onclick="myform.textbox.value += ')' ">
+    <input type="button" value="<" class="end_button" class="shadow_outer" onclick="myform.textbox.value += '<' ">
+</div>
+
+    </form>
+
+</body>
+<script src="app.js"></script>
+</html>
